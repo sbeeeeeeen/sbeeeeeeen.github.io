@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://sbeeeeeeen.github.io/sitemap.xml
