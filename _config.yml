@@ -292,3 +292,7 @@ defaults:
       comments: # true
       share: true
       related: true
+      
+#
+category_dir: category/
+tag_dir: tag/
