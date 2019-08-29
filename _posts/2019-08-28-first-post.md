@@ -1,20 +1,14 @@
 ---
 # layout: post
-title: "Welcome to Jekyll!"
+title: "Jekyll를 이용한 블로그 만들기"
 date: 2019-08-28 14:39:28 -0400
-categories: jekyll update
+categories: jekyll
 ---
 
-테스트!!!!!!!
+블로그 만들 때 참고했던 사이트 모음.
+계속 추가 예정
 
-```java
-class DoWhileLoopExample {
-    public static void main(String args[]){
-         int i=10;
-         do{
-              System.out.println(i);
-              i--;
-         }while(i>1);
-    }
-}
-```
+1. [Jekyll theme](https://github.com/mmistakes/minimal-mistakes)
+2. [카테고리 추가](https://hoisharka.github.io/jekyll/2017/12/03/jekyll-category-002/)
+3. [markdown 참고](https://teddylee777.github.io/jekyll/Jekyll-%EC%82%AC%EC%9A%A9%EC%9D%84-%EC%9C%84%ED%95%9C-markdown-%EB%AC%B8%EB%B2%95)
+
