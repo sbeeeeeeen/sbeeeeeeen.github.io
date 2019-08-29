@@ -5,6 +5,8 @@
   "posts": [
     {% for post in site.posts %}
     {
+      "categories": {{ post.categories | jsonify }},
+      "tags": {{ post.tags | jsonify }},
       "title": "{{ post.title }}",
       "date": "{{ post.date | date: "%Y-%m-%d"}}",
       "categories": {{ post.categories | jsonify }},
