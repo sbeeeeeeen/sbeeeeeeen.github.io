@@ -3,6 +3,7 @@
 title: "Jekyll를 이용한 블로그 만들기"
 date: 2019-08-28 14:39:28 -0400
 categories: jekyll
+comments: true
 ---
 
 블로그 만들 때 참고했던 사이트 모음.  
