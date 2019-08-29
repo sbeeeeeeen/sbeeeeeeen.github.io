@@ -5,7 +5,7 @@ date: 2019-08-28 14:39:28 -0400
 categories: jekyll
 ---
 
-블로그 만들 때 참고했던 사이트 모음.
+블로그 만들 때 참고했던 사이트 모음.  
 계속 추가 예정
 
 1. [Jekyll theme](https://github.com/mmistakes/minimal-mistakes){: target="_blank" }
