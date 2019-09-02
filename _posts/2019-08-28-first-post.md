@@ -15,4 +15,5 @@ comments: true
 [이모티콘](https://steemit.com/steemkr-guide/@snow-airline/steemkr-quick-start-guide){:target="_blank"}
 4. [댓글 추가하기](https://devmjun.github.io/archive/addComments){: target="_blank"}  
 5. [검색엔진에 블로그 등록](https://gmlwjd9405.github.io/2017/10/20/include-blog-in-a-GoogleSearchEngine.html){: target="_blank"}   
-[검색엔진에 블로그 등록2](http://jinyongjeong.github.io/2017/01/13/blog_make_searched/){:target="_blank"}
+[검색엔진에 블로그 등록2](http://jinyongjeong.github.io/2017/01/13/blog_make_searched/){:target="_blank"}  
+6. [md파일에 이미지 업로드](https://hanee24.github.io/2017/12/21/how-to-upload-image-with-github-readme/){:target="_blank"}
