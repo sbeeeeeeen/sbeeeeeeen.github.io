@@ -1,7 +1,7 @@
 ---
 title: "[디자인패턴] flux"
 date: 2019-08-29 15:10:28
-categories: designpattern, flux
+categories: designpattern,flux
 ---
   
 <br><br><br><br>
