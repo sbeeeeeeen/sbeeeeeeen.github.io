@@ -62,5 +62,12 @@ public class LambdaSample{
   }
 }
 ```  
-이렇게 간소화 할 수 있다....  
+이렇게 간소화 할 수 있다.... 근데 여기서 생략이 더 가능하다..^^  
+  
+- 매개변수의 자료형 생략 가능  
+> LambdaExamAddInf lambdaInf = (a, b)->{return a+b;};  
+- 매개변수가 한개라면 소괄호 생략 가능  
+> LambdaExamAddInf lambdaInf = a->{return a+b;};  
+- 구현한게 return문 하나밖에 없으면 return도 생략 가능..  
+> LambdaExamAddInf lambdaInf = (a, b)->a+b;  
 
