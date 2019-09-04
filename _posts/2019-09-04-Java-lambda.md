@@ -34,7 +34,7 @@ public interface LambdaExamAddInf {
 그냥 인터페이스에 `int` 매개변수 두개를 받아 `int`를 리턴하는 메서드 하나를 만들었다. 람다식은 함수형 인터페이스, 즉 하나의 추상 메서드만 선언된 인터페이스를 구현하는 방식이기 때문에 무조건 메서드는 하나여야한다. (아니면 오류남) 
 위의 `@FunctionalInterface` 어노테이션이 이거 함수형 인터페이스라 1메서드임이란 뜻  
   
-어쨌든 클래스를 만들어서 이 인터페이스를 써보겠다~ 생각해보면 우리는  
+어쨌든 클래스를 만들어서 이 인터페이스를 구현해보겠소한다면 보통    
 ```java  
 public class LambdaSample{
   public static void main(String[] args) {
@@ -51,7 +51,7 @@ public class LambdaSample{
 }
 ```  
   
-이런 식으로 쓸 수 있는데, 이것을 람다식으로 표현하면  
+이런 식으로 쓸 수 있는데, 이것을 람다식으로 표현해보면  
   
 ```java  
 public class LambdaSample{
@@ -64,20 +64,48 @@ public class LambdaSample{
 ```  
 이렇게 간소화 할 수 있다.... 근데 여기서 생략이 더 가능하다..^^  
   
-- 매개변수의 자료형 생략 가능  
+- 매개변수의 자료형 타입이 하나이면 생략 가능(컴파일러가 찾아준다)  
 > LambdaExamAddInf lambdaInf = (a, b)->{return a+b;};  
 - 매개변수가 한개라면 소괄호 생략 가능  
 > LambdaExamAddInf lambdaInf = a->{return a+b;};  
 - 구현한게 return문 하나밖에 없으면 return도 생략 가능..  
 > LambdaExamAddInf lambdaInf = (a, b)->a+b;  
   
-함수형 인터페이스인 `Runnable`을 이용해서 쓰레드를 구현해보면  
-
+  
+  
+예를 좀 더 들기 위해서 함수형 인터페이스인 `Runnable`을 이용해서 쓰레드를 구현해보면  
+  
+예제1.  
 ```java
-Runnable th = () -> System.out.println("test");
+Runnable th = () -> System.out.println("test"); //매개변수가 없어도 소괄호는 써야한다.
 th.run();
 ```  
   
 가 되시겠다.  
+  
+또 많이 쓰는 `Comparator`를 써보면  
+  
+예제2.  
+```java
+    List<Integer> list = new ArrayList<Integer>();
+    list.add(3);
+    list.add(1);
+    list.add(5);
+
+    //람다식 적용 X
+    Collections.sort(list, new Comparator<Integer>() {
+	@Override
+	public int compare(Integer x, Integer y) {
+		return Integer.compare(x, y);
+	}
+    });
+
+    //람다식 적용O
+    Collections.sort(list, (x,y)->Integer.compare(x, y));
+
+    System.out.println(list);
+```
+  
+이런 식으로 적용할 수 있다.  
   
   
