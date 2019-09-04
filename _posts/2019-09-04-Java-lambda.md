@@ -57,9 +57,8 @@ public class LambdaSample{
 public class LambdaSample{
   public static void main(String[] args) {
     LambdaExamAddInf lambdaInf = (int a, int b)->{return a+b;};
-		
-		int result = lambdaInf.add(5, 7);
-		System.out.println(result);
+	int result = lambdaInf.add(5, 7);
+	System.out.println(result);
   }
 }
 ```  
