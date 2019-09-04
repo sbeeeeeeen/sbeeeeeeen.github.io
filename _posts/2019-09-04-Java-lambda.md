@@ -15,7 +15,7 @@ categories: java lambda
  
 원래 메서드를 사용한다고 하면  
 > method(매개변수){  
-> nbsp;nbsp;nbsp;nbsp;실행코드;  
+> &nbsp;&nbsp;&nbsp;&nbsp; 실행코드;  
 > }  
   
 이런식으로 작성하는데, 이걸  
@@ -57,8 +57,8 @@ public class LambdaSample{
 public class LambdaSample{
   public static void main(String[] args) {
     LambdaExamAddInf lambdaInf = (int a, int b)->{return a+b;};
-	int result = lambdaInf.add(5, 7);
-	System.out.println(result);
+    int result = lambdaInf.add(5, 7);
+    System.out.println(result);
   }
 }
 ```  
@@ -70,4 +70,14 @@ public class LambdaSample{
 > LambdaExamAddInf lambdaInf = a->{return a+b;};  
 - 구현한게 return문 하나밖에 없으면 return도 생략 가능..  
 > LambdaExamAddInf lambdaInf = (a, b)->a+b;  
+  
+함수형 인터페이스인 `Runnable`을 이용해서 쓰레드를 구현해보면  
 
+```java
+Runnable th = () -> System.out.println("test");
+th.run();
+```  
+  
+가 되시겠다.  
+  
+  
