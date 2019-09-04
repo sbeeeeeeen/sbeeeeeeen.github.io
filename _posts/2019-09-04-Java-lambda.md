@@ -43,7 +43,7 @@ public class LambdaSample{
       public int add(int a, int b){
         return a+b;
       }
-    }
+    };
     
     int result = lambdaInf.add(5,7);
     System.out.print(result);
