@@ -8,18 +8,22 @@ type: page
 {% assign esc_date="{{ p.date }}" %}
 {% assign esc_ctgname="{{ hash }}" %}
 
-<div id="post-list">
-  <hr>
-  <h2 id="{{ category | first }}">{{ esc_ctgname }}</h2>
-  <ul>
-    <li v-for="p in posts" v-if="p.categories.indexOf(hash) != -1">
-      <time>
-        {{ esc_date }}
-      </time>
-      <a v-bind:href="p.url">{{ esc_title }}</a>
-    </li>
-  </ul>
+<div id="main" role="main">
+  {% include sidebar.html %}
+  <div id="post-list">
+    <hr>
+    <h2 id="{{ category | first }}">{{ esc_ctgname }}</h2>
+    <ul>
+      <li v-for="p in posts" v-if="p.categories.indexOf(hash) != -1">
+        <time>
+          {{ esc_date }}
+        </time>
+        <a v-bind:href="p.url">{{ esc_title }}</a>
+      </li>
+    </ul>
+  </div>
 </div>
+
 
 <script>
   var hash = decodeURI(window.location.hash.substr(1));
