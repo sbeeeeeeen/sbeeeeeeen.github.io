@@ -151,7 +151,7 @@ consumerLambda.accept("자바");
 ```  
   
   
-- Predicate \<T>\  
+- Predicate\<T>\  
   
 T를 받아 boolean 리턴..  
   
