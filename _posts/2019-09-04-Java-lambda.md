@@ -116,6 +116,7 @@ th.run();
 참고로.. 자바8에서 java.util.function package에 추가된 함수형 인터페이스가 있다...몇개만 살펴보자면<strike>(이제 그만..)</strike><br>
 ### java.util.function  
 - Function<T,R>  
+  
 T를 매개변수로 R을 리턴.  
   
 ```java
@@ -133,6 +134,7 @@ System.out.println(functionLambda.apply(1));
   
   
 - Consumer<T>  
+  
 void... 단순 처리용...  
   
 ```java
@@ -150,6 +152,7 @@ consumerLambda.accept("자바");
   
   
 - Predicate<T>  
+  
 T를 받아 boolean 리턴..  
   
 ```java
@@ -166,7 +169,8 @@ System.out.println(predicateLambda.test(4));
 ```  
   
   
-- Supplier<T>  
+- Supplier<T>
+  
 T를 리턴... 매개변수 없음.  
   
 ```java
