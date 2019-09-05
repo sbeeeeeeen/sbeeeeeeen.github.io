@@ -113,3 +113,72 @@ th.run();
 이런 식으로 적용할 수 있다.  
   
   
+참고로.. 자바8에서 java.util.function package에 추가된 함수형 인터페이스가 있다...몇개만 살펴보자면<strike>(이제 그만..)</strike><br>
+### java.util.function  
+- Function<T,R>  
+T를 매개변수로 R을 리턴.  
+  
+```java
+Function<Integer, Boolean> function = new Function<Integer, Boolean>() {
+	@Override
+	public Boolean apply(Integer t) {
+		return t==1?true:false;
+	}
+};
+System.out.println(function.apply(1));
+
+Function<Integer, Boolean> functionLambda = t->t==1?true:false;
+System.out.println(functionLambda.apply(1));
+```  
+  
+  
+- Consumer<T>  
+void... 단순 처리용...  
+  
+```java
+Consumer<String> consumer = new Consumer<String>() {
+	@Override
+	public void accept(String t) {
+		System.out.println(t);
+	}
+};
+consumer.accept("자바");
+		
+Consumer<String> consumerLambda = t -> System.out.println(t);
+consumerLambda.accept("자바");
+```  
+  
+  
+- Predicate<T>  
+T를 받아 boolean 리턴..  
+  
+```java
+Predicate<Integer> predicate = new Predicate<Integer>() {
+	@Override
+	public boolean test(Integer t) {
+		return t%2==0;
+	}
+};
+System.out.println(predicate.test(4));
+
+Predicate<Integer> predicateLambda = t -> t%2==0;
+System.out.println(predicateLambda.test(4));
+```  
+  
+  
+- Supplier<T>  
+T를 리턴... 매개변수 없음.  
+  
+```java
+Supplier<Integer> supplier = new Supplier<Integer>() {
+	@Override
+	public Integer get() {
+		return 1;
+	}
+};
+System.out.println(supplier.get());
+
+Supplier<Integer> supplierLambda = ()->1;
+System.out.println(supplierLambda.get());
+```  
+  
