@@ -133,7 +133,7 @@ System.out.println(functionLambda.apply(1));
 ```  
   
   
-- Consumer<T>  
+- Consumer<pre><T></pre>  
   
 void... 단순 처리용...  
   
@@ -151,7 +151,7 @@ consumerLambda.accept("자바");
 ```  
   
   
-- Predicate<T>  
+- Predicate<pre><T></pre>  
   
 T를 받아 boolean 리턴..  
   
@@ -169,7 +169,7 @@ System.out.println(predicateLambda.test(4));
 ```  
   
   
-- Supplier<T>
+- Supplier<pre><T></pre>
   
 T를 리턴... 매개변수 없음.  
   
