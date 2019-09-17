@@ -103,5 +103,12 @@ let foo = 1;
 
 > Uncaught ReferenceError: Cannot access 'foo' before initialization
 ```  
-블록 범위 안에서 `foo`라는 지역변수가 있기 때문에 `let foo`가 초기화가 안됐다고 에러가 뜬다~..  
+블록 범위 안에서 `foo`라는 지역변수가 있기 때문에 `let foo`가 초기화가 안됐다고 에러가 뜬다~..
+이건 또 TDZ라고 한단다... 뭐 그냥 사각지대 이런 느낌  
   
+  
+  
+  
+### Reference  
+- [let, const와 블록 레벨 스코프](https://poiemaweb.com/es6-block-scope){: target="_blank" }  
+- [자바스크립트의 변수범위와 호이스팅](http://chanlee.github.io/2013/12/10/javascript-variable-scope-and-hoisting/){: target="_blank" }
