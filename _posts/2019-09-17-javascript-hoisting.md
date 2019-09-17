@@ -31,7 +31,7 @@ comments: true
   
   
     
-## 호이스팅(hositing)이란!  
+## 호이스팅(hoisting)이란!  
 변수의 정의가 그 범위에 따라 선언과 할당으로 분리되는 것이다. 즉 변수가 정의되면 선언한 부분이 최상위로 올라간다는 것!  
 `var`는 함수범위 안에서 유효하기땜시 지역변수면 함수 최상위, 전역변수면 전역 최상위 이런식으로 선언 및 `undefined`로 초기화까지 된다.    
   
@@ -80,7 +80,6 @@ comments: true
 호이스팅이 되지 않는 것은 아니고 <strong>선언은 되지만 초기화는 안한다</strong>  
   
 ```javascript  
-
 {
   let temp = 2;
   console.log(temp);
