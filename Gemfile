@@ -16,4 +16,4 @@ group :jekyll_plugins do
   gem "jekyll-algolia"
 end
 
-gem "pristine-rake"
+gem "rake"
