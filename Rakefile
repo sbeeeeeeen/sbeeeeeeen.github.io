@@ -70,14 +70,15 @@ task :preview do
     end
   rescue ThreadError
     # You pressed Ctrl-C, oh my!
+  # Generate the site
+  sh "bundle exec jekyll build"
+
+  # Run Algolia 
+  sh "bundle exec jekyll algolia"
   end
 
   Jekyll::Commands::Serve.process(options)
 end
 
-# Generate the site
-sh "bundle exec jekyll build"
 
-# Run Algolia 
-sh "bundle exec jekyll algolia"
 
