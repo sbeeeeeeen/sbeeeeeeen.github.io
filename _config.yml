@@ -71,8 +71,8 @@ search_provider          : algolia # lunr (default), algolia, google
 algolia:
   application_id         : WMECGUF394 # YOUR_APPLICATION_ID
   index_name             : blog # YOUR_INDEX_NAME
-  search_only_api_key    : 8e6fbb84bf80e78d0c798f72c486a2a7 # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
+  search_only_api_key    : 8e6fbb84bf80e78d0c798f72c486a2a7
+  powered_by             : true # true (default), false
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
