@@ -54,6 +54,7 @@ git clone [URL]
 jekyll serve
 ```
 지킬 로컬에 띄우는 명령어같은데...  
+이거 아니면 `bundle exec jekyll serve`  
 여기서 정상적으로 넘어갔다면  
 http://127.0.0.1:4000/ 으로 접속하면 뜬다고한다...  
   
@@ -111,6 +112,36 @@ Configuration file: none
 ```
 내가 뭘 잘못했을까............ 
 
+2019.10.04 추가  
+다 삭제하고 다시 깔았다. git clone까지는 그대로했다.  
+그리고 git clone한 곳 말고 그 repositoryid.github.io 경로에서  
+  
+```
+jekyll build
+```  
+  
+이거랑, 인코딩 오류가 나서 (CP949였나?...딱봐도 인코딩문제)  
+  
+```
+chcp 65001
+```
+이걸 입력해줬다(UTF-8로 바꿔주기 위함)  
+<br>
+  
+그리고 또 오류가 났던 것 중에 하나가 라이브러리 문제였는데,  
+대충 오류 메시지가  
+  
+```
+You have already actived Gem이름 버전, but your Gemfile requires Gem이름 버전. Prepending 'bundle exec' to your command may solve this. (Gem::LoadError)
+```
+이런 식인데 똑같은거 버전 두개라서 충돌이 생겨 하나 없애야하는 것 같다..  
+  
+```
+gem uninstall Gem이름 -v 버전
+```  
+이렇게 쓰면 삭제된다 ~ (당연한 말이지만 install로 쓰면 install된다.)
+  
+되니까 넘 행복...
 </div>
 </details>
   
@@ -121,3 +152,4 @@ Configuration file: none
 - [깃 허브 페이지 로컬에서 실행하기](https://m.blog.naver.com/PostView.nhn?blogId=spring1a&logNo=221335758311&proxyReferer=https%3A%2F%2Fwww.google.com%2F){:target="_blank"}  
 - [Jekyll 설치 및 로컬에 띄우기](https://17billion.github.io/jekyll/install/2017/05/27/install-a-jekyll.html){:target="_blank"}  
 - [Windows에서 Github와 Jekyll 개발 환경 설치하기](https://wormwlrm.github.io/2018/07/13/How-to-set-Github-and-Jekyll-environment-on-Windows.html){:target="_blank"}  
+- [Jekyll을 이용하여 Github Blog 만들기](http://jinyongjeong.github.io/2017/01/08/jekyll_blog_making_new/){:target="_blank"}
