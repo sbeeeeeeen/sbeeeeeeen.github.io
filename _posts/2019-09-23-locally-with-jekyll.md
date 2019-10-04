@@ -114,18 +114,20 @@ Configuration file: none
 
 2019.10.04 추가  
 다 삭제하고 다시 깔았다. git clone까지는 그대로했다.  
-그리고 git clone한 곳 말고 그 repositoryid.github.io 경로에서  
+그리고 git clone한 곳 말고 그 repositoryid.github.io 경로에서 `bundle install`하고,  
   
 ```
 jekyll build
 ```  
   
-이거랑, 인코딩 오류가 나서 (CP949였나?...딱봐도 인코딩문제)  
+이걸 하니.. 인코딩 오류가 나서 (CP949였나?...딱봐도 인코딩문제)  
   
 ```
 chcp 65001
 ```
 이걸 입력해줬다(UTF-8로 바꿔주기 위함)  
+  
+그리고 다시 하니까 돌아갔다!..
 <br>
   
 그리고 또 오류가 났던 것 중에 하나가 라이브러리 문제였는데,  
@@ -141,7 +143,6 @@ gem uninstall Gem이름 -v 버전
 ```  
 이렇게 쓰면 삭제된다 ~ (당연한 말이지만 install로 쓰면 install된다.)
   
-되니까 넘 행복...
 </div>
 </details>
   
