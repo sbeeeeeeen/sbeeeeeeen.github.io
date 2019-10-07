@@ -1,6 +1,6 @@
 ---
 # layout: post
-title: "Jekyll를 이용한 블로그 만들기"
+title: "Jekyll을 이용한 블로그 만들기"
 date: 2019-08-28 14:39:28 -0400
 categories: jekyll
 comments: true

@@ -7,6 +7,7 @@ comments: true
 ---
   
   
+github에 TravisCI를 연동해놓았는데...(아마 검색 버튼 만들다가 연동한 것 같다)  
 언젠가부터 Travis CI에서 계속 똑같은 오류가 났다.   
   
 ```
@@ -28,13 +29,13 @@ C:\Users\test\sbeeeeeeen.github.io>bundle lock --add-platform ruby
 Fetching gem metadata from https://rubygems.org/..........
 Fetching gem metadata from https://rubygems.org/.
 Resolving dependencies...
-Writing lockfile to C:/Users/sbyim/Desktop/test/sbeeeeeeen.github.io/Gemfile.lock
+Writing lockfile to C:/sbeeeeeeen.github.io/Gemfile.lock
 
 C:\Users\test\sbeeeeeeen.github.io>bundle lock --add-platform x86_64-linux
 Fetching gem metadata from https://rubygems.org/..........
 Fetching gem metadata from https://rubygems.org/.
 Resolving dependencies..........................................................................................................................................................................................................................................................................................................................................................................................................................................
-Writing lockfile to C:/Users/sbyim/Desktop/test/sbeeeeeeen.github.io/Gemfile.lock
+Writing lockfile to C:/test/sbeeeeeeen.github.io/Gemfile.lock
 ```
   
 push를 하였으나 오류가 난다... 놀랍지도 않다ㅎ  
