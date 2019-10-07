@@ -146,8 +146,17 @@ gem uninstall Gem이름 -v 버전
 </div>
 </details>
   
-
-
+<br>
+```  
+ Auto-regeneration: enabled for 'C:/test/sbeeeeeeen.github.io'
+    Server address: http://127.0.0.1:4000
+  Server running... press ctrl-c to stop.
+```  
+  
+이런 식으로 돌아간다... 크 ~ 감격....
+    
+  
+  
 
 ## Reference  
 - [깃 허브 페이지 로컬에서 실행하기](https://m.blog.naver.com/PostView.nhn?blogId=spring1a&logNo=221335758311&proxyReferer=https%3A%2F%2Fwww.google.com%2F){:target="_blank"}  
