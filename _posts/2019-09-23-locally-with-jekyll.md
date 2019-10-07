@@ -1,6 +1,6 @@
 ---
 # layout: post
-title: "[Git] 로컬에서 지킬 블로그 실행해보기 !"
+title: "[Jekyll] 로컬에서 지킬 블로그 실행해보기 !"
 date: 2019-09-23 15:20:14
 categories: github jekyll
 comments: true
