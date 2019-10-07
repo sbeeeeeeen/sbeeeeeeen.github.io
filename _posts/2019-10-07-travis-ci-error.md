@@ -1,16 +1,21 @@
 ---
-title: "[TravisCI] Your bundle only supports platforms \"x64-mingw32\" but... 오류 수정"
+# layout: post
+title: "[TravisCI] Your bundle only supports platforms x64-mingw32 but... 오류 수정"
 date: 2019-10-07 15:04:58
 categories: git TravisCI
 comments: true
 ---
-
+  
+  
+언젠가부터 Travis CI에서 계속 똑같은 오류가 났다.   
+  
 ```
 Your bundle only supports platforms ["x64-mingw32"] but your local platforms are
 ["ruby", "x86_64-linux"], and there's no compatible match between those two
 lists.
 ```  
-언젠가부터 Travis CI에서 계속 똑같은 오류가 났다. 굳이 수정안해도 돌아가긴해서 냅뒀다가.. 영 거슬려서 
+  
+굳이 수정안해도 돌아가긴해서 냅뒀다가.. 영 거슬려서 
 또 구글링을 시작했다.....  
   
 [[SOLVED] How can I resolve "Your bundle only supports platforms ["x86-mingw32"] but your local platforms are ["ruby", "x86_64-linux"]"](https://tutel.me/c/programming/questions/43429685/how+can+i+resolve+quotyour+bundle+only+supports+platforms+quotx86mingw32quot+but+your+local+platforms+are+quotrubyquot+quotx86_64linuxquotquot){:target="_blank"}  
