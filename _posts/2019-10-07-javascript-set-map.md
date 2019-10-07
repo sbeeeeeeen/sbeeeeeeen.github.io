@@ -1,5 +1,4 @@
 ---
-# layout: post
 title: "[자바스크립트] Set(), Map()"
 date: 2019-10-07 11:59:46
 categories: javascript set map
