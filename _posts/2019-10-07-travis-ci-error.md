@@ -5,7 +5,8 @@ categories: git TravisCI
 comments: true
 ---
   
-<br>
+<br>  
+  
 ```
 Your bundle only supports platforms ["x64-mingw32"] but your local platforms are
 ["ruby", "x86_64-linux"], and there's no compatible match between those two
