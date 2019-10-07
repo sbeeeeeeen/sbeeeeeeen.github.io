@@ -1,11 +1,11 @@
 ---
-layout: post
 title: "[TravisCI] Your bundle only supports platforms "x64-mingw32" but ~ 오류 수정"
 date: 2019-10-07 15:04:58
 categories: git TravisCI
 comments: true
 ---
-
+  
+<br>
 ```
 Your bundle only supports platforms ["x64-mingw32"] but your local platforms are
 ["ruby", "x86_64-linux"], and there's no compatible match between those two
