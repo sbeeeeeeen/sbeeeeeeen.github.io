@@ -13,7 +13,7 @@ NUMBER(n,n) 타입 컬럼에 자꾸 0.0이 insert.가 됐다...
 난 null을 넣고싶은데.... VO에 set을 아무것도 안했는데... 흠 뭐가 문제일까...     
     
   
-![unnamed](https://user-images.githubusercontent.com/41671001/74699039-f6ca6580-5242-11ea-90a1-f091c6489620.jpg)
+![unnamed](https://user-images.githubusercontent.com/41671001/74699039-f6ca6580-5242-11ea-90a1-f091c6489620.jpg)  
 계속 이 표정으로 n시간을 모니터만 쳐다보다가....  
 (사실.. 흥미가 0이었음)    
    
@@ -46,6 +46,7 @@ List<Integer> tempList = new ArrayList<Integer>();
    
 2. 오토박싱 언박싱  
 이걸 칭하는 말이 왜 있는지는 모르겠는데.. 뭐 아무튼  
+  
 - 오토박싱  
 원시 데이터 ------------------> 해당 래퍼 클래스 객체  
 ex) int        ------------------>  Integer  
