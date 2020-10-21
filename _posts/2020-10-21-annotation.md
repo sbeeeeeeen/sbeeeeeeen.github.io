@@ -9,25 +9,26 @@ comments: true
    
 <br/>
 내가 보려고 정리해놓는 어노테이션 모음  
+오랜만에 깃헙 들어오는데 뭔가 좀 바뀐것같네...
   
   
   
--- @Getter, @Setter
+-- @Getter, @Setter  
 ㅇㅇㅇㅇ내가 아는 그 getter/setter 그거
 
--- @Data
+-- @Data  
 찾아보니 여러 어노테이션의 조합이라고하는데 ( 출처 : [롬복(Lombok) 애노테이션 사용하기](https://siyoon210.tistory.com/24){:target="_blank"} )
 
--- @EqualsAndHashCode
+-- @EqualsAndHashCode  
 몰라 ㅡㅡ;;
 
--- @NoArgsConstructor
+-- @NoArgsConstructor  
 기본생성자 생성
 
--- @AllArgsConstructor
+-- @AllArgsConstructor  
 모든 필드값 포함 생성자 생성
 
--- @Slf4j
+-- @Slf4j  
 어 내가 아는 그거 로그 그냥 log.debug 이런식으로 쓰셈
 
 
